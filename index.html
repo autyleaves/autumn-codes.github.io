@@ -1,3 +1,9 @@
+<!--
+Project Name: AutumnCodes
+Developer: Autumn Harrison
+Last Updated: 07.10.2024
+Purpose: The main index file that contains the information and main elements for the website portfolio. 
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,20 +11,131 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Autumn's Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <div class="intro">
-      <h1>Hello, I'm Autumn. </h1>
-      <div class="nav">
-        <a href="#Landing">Landing</a>
-        <a href="#Vision">Vision</a>
-        <a href="#Portfolio">Portfolio</a>
-        <a href="#Resume">Resume</a>
-        <a href="#Contacts">Contact</a>
-      </div>
+
+  <header class="header">
+    <a href="#landing"><img src="images/AutumnH_Logo.png" class="logo"></a>
+    
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#landing" class="active">Landing</a>
+            <a href="#vision">Vision</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
+  </header>
+  
+  <section class="landing" id="landing">
+    <div class="home-content">
+        <h1>Hey, I'm <span>Autumn.</span></h1>
+        <h3 class="text-animation">I'm a <span>
+        </span></h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+          Quasi eum nam nobis facilis rerum eos hic recusandae, molestias eveniet 
+          commodi non deserunt provident debitis quae nemo quis nihil, sit similique?
+        </p>
+
+        <div class="social-icons">
+            <a href="www.linkedin.com/in/autumn-harrison-72a3682ba"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/autyleaves"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.instagram.com/actually_auty?igsh=MTZsbnBsa3JvYWc5ZQ%3D%3D&utm_source=qr"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://www.blueskytn.com"><i class='bx bxs-graduation'></i></a>
+        </div>
+
+        <div class="btn-group">
+          <a href="#" class="btn">Hire</a>
+          <a href="#contact" class="btn">Contact</a>
+        </div>
+  
     </div>
-  </div>
+    <div class="home-img">
+      <img src="images/placeholder.jpg" alt="">
+    </div>
+      
+    </div>
+  </section>
+
+  <section class="vision" id="vision">
+    <div class="vision-content">
+      <h2 class="heading">My Vision</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Doloremque veritatis esse hic illo non reprehenderit quaerat sapiente! 
+          Odit dolorem, optio quas neque, tenetur commodi quo incidunt sed, sit sequi impedit.
+        </p>
+
+        <video controls>
+          <source src="videos/placeholder.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <div class="portfolio-content">
+      <h2 class="heading">Portfolio</h2>
+
+
+    </div>
+
+  </section>
+
+  <section class="resume" id="resume">
+    <div class="resume-content">
+      <h2 class="heading">Resume</h2>
+
+
+    </div>
+
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <div class="portfolio-content">
+      <h2 class="heading">Portfolio</h2>
+
+
+    </div>
+
+  </section>
+
+  <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+
+      <form action-="">
+          <div class="input-group">
+              <div class="input-box">
+                  <input type="text" placeholder="Full Name">
+                  <input type="email" placeholder="Email">
+              </div>
+              <div class="input-box">
+                  <input type="number" placeholder="Phone Number">
+                  <input type="text" placeholder="Subject">
+              </div>
+          </div>
+
+          <div class="input-group-2">
+              <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+              <input type="submit" value="Send Message" class="btn">
+          </div>
+      </form>
+  </section>
+
+  <footer class="footer">
+      <div>
+        <p class="copyright">
+          © Autumn Harrison | All Rights Reserved
+        </p>
+      </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
 
