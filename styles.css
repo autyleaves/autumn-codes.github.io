@@ -131,15 +131,15 @@ span {
 }
 
 .home-img {
-    border-radius: 50%;
+    
 }
 
 .home-img img {
     position: relative;
     top: 3rem;
-    height: 32vw;
-    width:32vw;
-    border-radius: 50%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 20%;
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
     transition: 0.4s ease-in-out;
@@ -261,11 +261,11 @@ span {
 @keyframes words {
     0%,
     20% {
-        content: "BlueSky Student";
+        content: "BlueSky TN Alumni";
     }
     21%,
     40% {
-        content: "Rising Developer"
+        content: "Software Engineer"
     }
 
     41%,
@@ -312,9 +312,159 @@ span {
 .heading {
     font-size: 8rem;
     text-align: center;
-    margin: 5rem 0;
+    margin-bottom: 5rem 0;
 }
 
-.Vision {
+.vision {
+    padding: 15rem 12%; /* Increase top and bottom padding */
+    text-align: center; /* Center the header */
+}
+
+.heading {
+    font-size: 8rem; /* Maintain header size */
+    margin-bottom: rem;
+    color: var(--main-color); /* Match header color */
+}
+
+.vision-content {
+    display: flex; /* Flex container for text and video */
+    justify-content: space-between; /* Space out text and video */
+    align-items: center; /* Center items vertically */
+    margin: 0 auto; /* Center content block */
+    max-width: 1200px; /* Limit width for better readability */
+    padding-top: 14rem;
+}
+
+.vision-content p {
+    flex: 1; /* Allow text to take available space */
+    font-size: 1.6rem; /* Adjust font size */
+    line-height: 1.8; /* Improve readability */
+    margin-right: 2rem; /* Space between text and video */
+    text-align: left; /* Left-align the text */
+}
+
+.video-container {
+    flex: 1; /* Allow video to take available space */
+    display: flex;
+    justify-content: center; /* Center the video */
+}
+
+video {
+    width: 423px; /* Set to specified width */
+    height: 270px; /* Set to specified height */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 0 25px var(--main-color);
+    transition: 0.4s ease-in-out;
+}
+
+video:hover {
+    box-shadow: 0 0 50px var(--main-color), 0 0 100px var(--main-color);
+}
+
+.resume {
+    text-align: center; /* Center aligns the content */
+    padding: 2rem; /* Add some padding */
+    
+    border-radius: 10px; /* Rounded corners */
+}
+
+.resume h2 {
+    padding: 13rem;
+}
+
+.resume-content {
+    max-width: 600px; /* Limit width for better presentation */
+    margin: auto; /* Center the content */
+}
+
+.resume-image {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Rounded corners for the image */
+    margin: 1rem 0; /* Space around the image */
+    box-shadow: 0 0 10px var(--main-color), /* Outer glow */
+                0 0 20px var(--main-color), /* Stronger glow */
+                0 0 30px var(--main-color); /* Even stronger glow */
+    transition: transform 0.3s; /* Smooth transform on hover */
+}
+
+.resume-image:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.download-btn {
+    display: inline-block; /* Makes it behave like a button */
+    padding: 0.75rem 1.5rem; /* Spacing for the button */
+    background-color: var(--main-color); /* Button color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+    margin-top: 2rem; /* Add spacing above the button */
+}
+
+.download-btn:hover {
+    background-color: var(--hover-color); /* Change color on hover */
+}
+
+.portfolio {
+
 
 }
+
+.portfolio h2 {
+    margin-bottom: 13rem;
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 3rem; /* Space between grid items */
+    margin: 0 auto; /* Center the grid container */
+    max-width: 1200px; /* Optional: limit width */
+    padding: 1rem; /* Optional: add padding */
+}
+
+.portfolio-box {
+    background: var(--main-color); /* Optional: give a background color to the boxes */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: subtle shadow */
+    padding: 1.5rem; /* Space inside each box */
+    box-shadow: 0 0 10px var(--main-color), /* Outer glow */
+    0 0 5px var(--main-color), /* Stronger glow */
+    0 0 10px var(--main-color); /* Even stronger glow */
+transition: 0.3s; /* Smooth transform on hover */
+}
+
+.portfolio-box:hover {
+    background-color: white;
+    color: black;
+    border: 5px solid var(--main-color);
+    transform: scale(1.05); 
+}
+
+.portfolio-box .portfolio-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 200px;
+    justify-content: left;
+    align-items: baseline;
+    padding: 20px 20px;
+}
+
+.portfolio-info h4 {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 2;
+}
+
+.portfolio-info p {
+    font-size: 12px;
+    overflow: wrap;
+    font-weight: 600;
+    max-height: 400px;
+    line-height: 1.7;
+    margin: 0 auto;
+}
+
